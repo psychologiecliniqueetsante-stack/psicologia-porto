@@ -1,0 +1,94 @@
+:root {
+  --bg: #f4f1ec;
+  --text: #2f2f2f;
+  --muted: #6a6a6a;
+  --accent: #5f7a7a;
+
+  --font-title: "Georgia", "Times New Roman", serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.75;
+}
+
+.site-header,
+.site-footer {
+  text-align: center;
+  padding: 2.8rem 1.2rem;
+}
+
+.site-header h1 {
+  font-family: var(--font-title);
+  margin-bottom: 0.4rem;
+}
+
+.site-header p {
+  color: var(--muted);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.2rem 1.4rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  margin-bottom: 1.3rem;
+}
+
+#international h2 {
+  font-size: 1.4rem;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.lang {
+  background-color: #ffffff;
+  padding: 1.6rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.lang h3 {
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.lang p {
+  margin-bottom: 0.9rem;
+}
+
+.link a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
